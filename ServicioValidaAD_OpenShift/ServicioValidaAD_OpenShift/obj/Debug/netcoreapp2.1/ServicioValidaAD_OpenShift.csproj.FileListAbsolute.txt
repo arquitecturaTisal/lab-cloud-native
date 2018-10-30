@@ -1,0 +1,36 @@
+C:\Users\lpetruzzella\source\repos\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\bin\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.deps.json
+C:\Users\lpetruzzella\source\repos\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\bin\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.runtimeconfig.json
+C:\Users\lpetruzzella\source\repos\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\bin\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.runtimeconfig.dev.json
+C:\Users\lpetruzzella\source\repos\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\bin\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.dll
+C:\Users\lpetruzzella\source\repos\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.csproj.CoreCompileInputs.cache
+C:\Users\lpetruzzella\source\repos\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.RazorAssemblyInfo.cache
+C:\Users\lpetruzzella\source\repos\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.RazorAssemblyInfo.cs
+C:\Users\lpetruzzella\source\repos\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.AssemblyInfoInputs.cache
+C:\Users\lpetruzzella\source\repos\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.AssemblyInfo.cs
+C:\Users\lpetruzzella\source\repos\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.RazorTargetAssemblyInfo.cache
+C:\Users\lpetruzzella\source\repos\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\bin\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.pdb
+C:\Users\lpetruzzella\source\repos\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\lpetruzzella\source\repos\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.dll
+C:\Users\lpetruzzella\source\repos\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.pdb
+C:\Users\lpetruzzella\source\repos\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\bin\Debug\netcoreapp2.1\LabActiveDirectory.Entidades.dll
+C:\Users\lpetruzzella\source\repos\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\bin\Debug\netcoreapp2.1\LabActiveDirectory.Entidades.pdb
+C:\Users\lpetruzzella\source\repos\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.csproj.CopyComplete
+C:\Users\lpetruzzella\source\repos\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.csprojAssemblyReference.cache
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.csproj.CoreCompileInputs.cache
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.RazorAssemblyInfo.cache
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.RazorAssemblyInfo.cs
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.AssemblyInfoInputs.cache
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.AssemblyInfo.cs
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.dll
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.pdb
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\bin\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.deps.json
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\bin\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.runtimeconfig.json
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\bin\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.runtimeconfig.dev.json
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\bin\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.dll
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\bin\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.pdb
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\bin\Debug\netcoreapp2.1\LabActiveDirectory.Entidades.dll
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\bin\Debug\netcoreapp2.1\Tisal.Cryptography.dll
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.RazorTargetAssemblyInfo.cache
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.csproj.CopyComplete
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift\obj\Debug\netcoreapp2.1\ServicioValidaAD_OpenShift.csprojAssemblyReference.cache

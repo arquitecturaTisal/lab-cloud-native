@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  serviciovalidaad_openshift:
+    image: ${DOCKER_REGISTRY}serviciovalidaadopenshift
+    build:
+      context: .
+      dockerfile: ServicioValidaAD_OpenShift/Dockerfile

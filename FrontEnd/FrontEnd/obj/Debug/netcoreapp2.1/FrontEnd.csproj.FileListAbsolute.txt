@@ -1,0 +1,15 @@
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\FrontEnd\FrontEnd\bin\Debug\netcoreapp2.1\FrontEnd.deps.json
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\FrontEnd\FrontEnd\bin\Debug\netcoreapp2.1\FrontEnd.runtimeconfig.json
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\FrontEnd\FrontEnd\bin\Debug\netcoreapp2.1\FrontEnd.runtimeconfig.dev.json
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\FrontEnd\FrontEnd\bin\Debug\netcoreapp2.1\FrontEnd.dll
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\FrontEnd\FrontEnd\bin\Debug\netcoreapp2.1\FrontEnd.pdb
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\FrontEnd\FrontEnd\obj\Debug\netcoreapp2.1\FrontEnd.csprojAssemblyReference.cache
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\FrontEnd\FrontEnd\obj\Debug\netcoreapp2.1\FrontEnd.csproj.CoreCompileInputs.cache
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\FrontEnd\FrontEnd\obj\Debug\netcoreapp2.1\FrontEnd.RazorAssemblyInfo.cache
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\FrontEnd\FrontEnd\obj\Debug\netcoreapp2.1\FrontEnd.RazorAssemblyInfo.cs
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\FrontEnd\FrontEnd\obj\Debug\netcoreapp2.1\FrontEnd.AssemblyInfoInputs.cache
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\FrontEnd\FrontEnd\obj\Debug\netcoreapp2.1\FrontEnd.AssemblyInfo.cs
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\FrontEnd\FrontEnd\obj\Debug\netcoreapp2.1\FrontEnd.RazorTargetAssemblyInfo.cache
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\FrontEnd\FrontEnd\obj\Debug\netcoreapp2.1\FrontEnd.dll
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\FrontEnd\FrontEnd\obj\Debug\netcoreapp2.1\FrontEnd.pdb
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\FrontEnd\FrontEnd\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs

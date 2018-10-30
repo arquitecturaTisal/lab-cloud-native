@@ -1,0 +1,2 @@
+C:\Users\lpetruzzella\source\repos\ServicioValidaAD_OpenShift\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\ServicioValidaAD_OpenShift\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache

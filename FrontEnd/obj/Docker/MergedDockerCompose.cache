@@ -1,0 +1,19 @@
+services:
+  frontend:
+    build:
+      context: C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\FrontEnd
+      dockerfile: FrontEnd/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTPS_PORT: '44307'
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: frontend
+    ports:
+    - published: 51959
+      target: 80
+    - published: 44307
+      target: 443
+    volumes:
+    - C:\Users\lpetruzzella\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\lpetruzzella\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'
