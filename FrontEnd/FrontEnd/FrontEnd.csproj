@@ -7,12 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="DLLs\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="LabActiveDirectory.Entidades">
+      <HintPath>DLLs\LabActiveDirectory.Entidades.dll</HintPath>
+    </Reference>
+    <Reference Include="Tisal.Cryptography">
+      <HintPath>DLLs\Tisal.Cryptography.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

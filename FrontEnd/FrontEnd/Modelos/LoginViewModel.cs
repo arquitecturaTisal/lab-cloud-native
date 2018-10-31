@@ -13,6 +13,8 @@ namespace FrontEnd.Modelos
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
+        public string Domain { get; set; }
+
         [Display(Name = "Recordarme")]
         public bool RememberMe { get; set; }
         public string ReturnUrl { get; set; }

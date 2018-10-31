@@ -15,7 +15,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace ServicioValidaAD_OpenShift.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/v1/[controller]")]
     [ApiController]
     public class LoginController : Controller
     {
@@ -26,15 +26,20 @@ namespace ServicioValidaAD_OpenShift.Controllers
             _config = config;
         }
 
-
+        public class AutenthicationInfo
+        {
+            public string dominio { get; set; }
+            public string usuario { get; set; }
+            public string clave { get; set; }
+        }
 
         //VALIDAR  -> https://localhost:44395/api/login/login?usuario=lpetruzzella&clave=UTBSWmkwSTczVDgyY3hGTThna2liQnh4RElHR3dVMXVHMlUrNXMxQ1dncz0=&dominio=TISAL
         //URL AD LOCAL -> http://labwsad.tisal.cl/UsuarioActiveDirectory/api/v1/
 
-        [Route("Login")]
+        [Route("auth")]
         [AllowAnonymous]
-        [HttpGet]
-        public IActionResult Login(string usuario,string clave,string dominio)
+        [HttpPost]
+        public IActionResult Login(AutenthicationInfo dataLogin)
         {
             ValidacionUsuario respuesta = new ValidacionUsuario();
 
@@ -57,9 +62,9 @@ namespace ServicioValidaAD_OpenShift.Controllers
 
             var parametros = new Dictionary<string, string>
             {
-                { "dominio", dominio },
-                { "usuario", usuario },
-                { "clave", clave }
+                { "dominio", dataLogin.dominio  },
+                { "usuario", dataLogin.usuario  },
+                { "clave", dataLogin.clave  }
             }; 
 
             var request = new FormUrlEncodedContent(parametros);
@@ -74,7 +79,7 @@ namespace ServicioValidaAD_OpenShift.Controllers
 
 
             }
-            catch(Exception) {
+            catch(Exception ex) {
                 respuesta.EstadoValidacion = 0;
                 respuesta.Mensaje = "Ocurrió un error inesperado";
             }
