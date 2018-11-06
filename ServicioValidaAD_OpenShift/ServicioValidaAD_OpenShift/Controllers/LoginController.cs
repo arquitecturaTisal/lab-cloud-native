@@ -81,7 +81,7 @@ namespace ServicioValidaAD_OpenShift.Controllers
             }
             catch(Exception ex) {
                 respuesta.EstadoValidacion = 0;
-                respuesta.Mensaje = "Ocurrió un error inesperado";
+                respuesta.Mensaje = "Ocurrió un error inesperado." + ex.Message;
             }
 
             return Ok(respuesta);

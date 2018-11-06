@@ -55,9 +55,9 @@ namespace FrontEnd.Controladores
 
                 var parametros = new Dictionary<string, string>
                 {
-                    { "dominio", dominio },
+                    { "dominio", model. },
                     { "usuario", usuario },
-                          { "clave", clave }
+                    { "clave", clave }
                 };
 
                 var request = new FormUrlEncodedContent(parametros);
