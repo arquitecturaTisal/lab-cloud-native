@@ -6,7 +6,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=https://+:443;http://+:80
       - ASPNETCORE_HTTPS_PORT=44395
-      - LOGIN_BASEURL=http://172.31.2.187:8080/
+      - LOGIN_BASEURL=http://200.6.103.165/
       - LOGIN_URLRELATIVA=UsuarioActiveDirectory/api/v1/
     ports:
       - "56587:80"

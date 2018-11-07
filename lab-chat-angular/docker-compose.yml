@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  lab-chat-angular:
+    image: ${DOCKER_REGISTRY}labchatangular
+    build:
+      context: .
+      dockerfile: lab-chat-angular/Dockerfile
