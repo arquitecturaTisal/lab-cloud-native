@@ -1,10 +1,12 @@
 FROM microsoft/dotnet:2.1-aspnetcore-runtime AS base
-RUN apt-get update \
-    && apt-get upgrade -y \
-    && curl -sL https://deb.nodesource.com/setup_11.x | bash - \
-    && apt-get install -y nodejs
+# Setup NodeJs
+RUN apt-get update && \
+    apt-get install -y wget && \
+    apt-get install -y gnupg2 && \
+    wget -qO- https://deb.nodesource.com/setup_11.x | bash - && \
+    apt-get install -y build-essential nodejs
+# End setup
 WORKDIR /app
-EXPOSE 56319
 EXPOSE 44353
 
 FROM microsoft/dotnet:2.1-sdk AS build
