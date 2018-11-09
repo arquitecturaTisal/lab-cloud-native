@@ -6,21 +6,37 @@
   </h1>
 
   <div class="container">
-    <h2>Hello {{nick}}!</h2>
-    <form (ngSubmit)="sendMessage()" #chatForm="ngForm">
+    <h2>¡Bienvenido {{nick}}!</h2>
+    <form #chatForm="ngForm" (ngSubmit)="sendMessage();chatForm.reset();">
       <div>
-        <label for="message">Message</label>
+        <label for="message">Mensaje</label>
         <input type="text" id="message" name="message" [(ngModel)]="message" required>
       </div>
       <button type="submit" id="sendmessage" [disabled]="!chatForm.valid">
-        Send
+        Enviar Mensaje
       </button>
     </form>
   </div>
 
   <div class="container" *ngIf="messages.length > 0">
     <div *ngFor="let message of messages">
-      <span>{{message}}</span>
+      <div *ngIf="{{message.mio}}; then thenBlock else elseBlock"></div>
+      <ng-template #thenBlock>
+        <div col-md-12 style="text-align:left">
+          <div col-md-6></div>
+          <div col-md-6>
+            <strong><small>{{message.fecha}}</small> {{message.usuario}} - {{message.mensaje}}</strong>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template #elseBlock>
+        <div col-md-12 style="text-align:left">
+          <div col-md-6>
+            <strong><small>{{message.fecha}}</small> {{message.usuario}} - {{message.mensaje}}</strong>
+          </div>
+          <div col-md-6></div>
+        </div>
+      </ng-template>     
     </div>
   </div>
 

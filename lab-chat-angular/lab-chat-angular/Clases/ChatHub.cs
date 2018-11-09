@@ -10,7 +10,8 @@ namespace Clases
     {
         public void SendToAll(string name, string message)
         {
-            Clients.All.SendAsync("sendToAll", name, message);
+            String fecha = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+            Clients.All.SendAsync("sendToAll", name, message,fecha);
         }
     }
 }
