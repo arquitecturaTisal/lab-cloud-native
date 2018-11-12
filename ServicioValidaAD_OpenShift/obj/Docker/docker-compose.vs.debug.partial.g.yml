@@ -7,14 +7,15 @@ services:
       target: base
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
-      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_serviciovalidaad_openshift$
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
     volumes:
       - C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\ServicioValidaAD_OpenShift\ServicioValidaAD_OpenShift:/app
       - C:\Users\lpetruzzella\vsdbg\vs2017u5:/remote_debugger:ro
-#$nuget_volume_mapping_serviciovalidaad_openshift$
+      - C:\Users\lpetruzzella\.nuget\packages\:/root/.nuget/packages:ro
+      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_serviciovalidaad_openshift$ bin/Debug/netcoreapp2.1/ServicioValidaAD_OpenShift.dll"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  bin/Debug/netcoreapp2.1/ServicioValidaAD_OpenShift.dll"
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/bash -c \"if PID=$$(pidof -x dotnet); then kill $$PID; fi\""

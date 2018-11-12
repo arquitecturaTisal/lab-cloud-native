@@ -6,6 +6,8 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=https://+:443;http://+:80
       - ASPNETCORE_HTTPS_PORT=44353
+      - LOGIN_BASEURL=http://backend-login-api-lab-arquitectura-dev.appl.tisal.cl/
+      - LOGIN_URLRELATIVA=api/v1/login/auth
     ports:
       - "56319:80"
       - "44353:443"

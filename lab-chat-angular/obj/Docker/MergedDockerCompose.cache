@@ -7,6 +7,8 @@ services:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_HTTPS_PORT: '44353'
       ASPNETCORE_URLS: https://+:443;http://+:80
+      LOGIN_BASEURL: http://backend-login-api-lab-arquitectura-dev.appl.tisal.cl/
+      LOGIN_URLRELATIVA: api/v1/login/auth
     image: labchatangular
     ports:
     - published: 56319
