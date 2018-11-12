@@ -23,9 +23,6 @@
     <Reference Include="LabActiveDirectory.Entidades">
       <HintPath>DLLs\LabActiveDirectory.Entidades.dll</HintPath>
     </Reference>
-    <Reference Include="Tisal.Cryptography">
-      <HintPath>DLLs\Tisal.Cryptography.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>

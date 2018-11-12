@@ -30,8 +30,7 @@
           "Swashbuckle.AspNetCore.Swagger": "3.0.0",
           "Swashbuckle.AspNetCore.SwaggerGen": "3.0.0",
           "Swashbuckle.AspNetCore.SwaggerUI": "3.0.0",
-          "LabActiveDirectory.Entidades": "1.0.0.0",
-          "Tisal.Cryptography": "1.0.0.0"
+          "LabActiveDirectory.Entidades": "1.0.0.0"
         },
         "runtime": {
           "ServicioValidaAD_OpenShift.dll": {}
@@ -579,17 +578,6 @@
         },
         "compile": {
           "LabActiveDirectory.Entidades.dll": {}
-        }
-      },
-      "Tisal.Cryptography/1.0.0.0": {
-        "runtime": {
-          "Tisal.Cryptography.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        },
-        "compile": {
-          "Tisal.Cryptography.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3740,11 +3728,6 @@
       "hashPath": "system.linq.parallel.4.3.0.nupkg.sha512"
     },
     "LabActiveDirectory.Entidades/1.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Tisal.Cryptography/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

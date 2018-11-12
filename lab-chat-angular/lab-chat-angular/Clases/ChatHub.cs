@@ -27,6 +27,8 @@ namespace Clases
             string secret = "tisal.2018_security+PublicKey!#d";
 
             claveEncriptada = Tisal.Cryptography.Helper.Instance.Encripta(clave, secret);
+            var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(claveEncriptada);
+            claveEncriptada = System.Convert.ToBase64String(plainTextBytes);
 
             ValidacionUsuario respuesta = new ValidacionUsuario();
 
