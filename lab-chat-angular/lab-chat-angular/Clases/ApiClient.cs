@@ -99,7 +99,6 @@ public partial class ApiClient
 
     private void addHeaders()
     {
-        _httpClient.DefaultRequestHeaders.Remove("userIP");
-        _httpClient.DefaultRequestHeaders.Add("userIP", "192.168.1.1");
+
     }
 }
