@@ -5,7 +5,7 @@
     <div class="form-group">
       <label for="txtDominio">Dominio</label>
       <i class="fa fa-lock"></i>
-      <input type="text" autocomplete="off" name="txtDominio" id="txtDominio" class="form-control" [(ngModel)]="txtDominio" required value="TISAL" />
+      <input type="text" autocomplete="off" name="txtDominio" id="txtDominio" class="form-control" [(ngModel)]="txtDominio" required  />
       
     </div>
     <div class="form-group">
@@ -21,7 +21,7 @@
     </div>
     <div class="form-actions">
       <button type="submit" id="sendmessage" [disabled]="!loginForm.valid">
-        Enviar Mensaje
+        Iniciar sesión
       </button>
     </div>
   </form>

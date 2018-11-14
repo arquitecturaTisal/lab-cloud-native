@@ -11,6 +11,8 @@ import { LOCAL_STORAGE, WebStorageService } from 'angular-webstorage-service';
 export class AppComponent {
   txtToken = '';
   txtUsuario = '';
+  loggedIN = false;
+
   constructor(@Inject(LOCAL_STORAGE) private storage: WebStorageService) {
     
   }
@@ -26,9 +28,18 @@ export class AppComponent {
 
     if (this.storage.get('user') != null) {
       this.txtUsuario = this.storage.get('user');
+      this.loggedIN = true;
     } else {
       this.txtUsuario = "NN";
+      this.loggedIN = false;
     }
+  }
+  
+  public cerrarSesion(): void {
+    this.storage.set('user',null);
+    this.storage.set('token', null);
+
+    location.href = '/login'
   }
 
  

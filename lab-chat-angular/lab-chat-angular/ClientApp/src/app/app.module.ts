@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { Login } from './login/login';
+import { Logout } from './login/logout';
 import { StorageServiceModule } from 'angular-webstorage-service';
 
 @NgModule({
@@ -19,7 +20,8 @@ import { StorageServiceModule } from 'angular-webstorage-service';
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    Login
+    Login,
+    Logout
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -31,7 +33,8 @@ import { StorageServiceModule } from 'angular-webstorage-service';
       { path: 'home', component: HomeComponent},
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
-      { path: 'login', component: Login }
+      { path: 'login', component: Login },
+      { path: 'logout', component: Logout }
     ])
   ],
   providers: [],

@@ -12,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using System;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace lab_chat_angular
@@ -39,19 +40,15 @@ namespace lab_chat_angular
                 .AddJwtBearer(options =>
                 {
                     // Configure JWT Bearer Auth to expect our security key
-                    options.TokenValidationParameters =
-                    new TokenValidationParameters
+                    options.TokenValidationParameters = new TokenValidationParameters
                     {
-                        LifetimeValidator = (before, expires, token, param) =>
-                        {
-                            return expires > DateTime.UtcNow;
-                        },
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
                         ValidIssuer = Configuration["Jwt:Issuer"],
                         ValidAudience = Configuration["Jwt:Issuer"],
-                        ValidateAudience = false,
-                        ValidateIssuer = true,
-                        ValidateActor = true,
-                        ValidateLifetime = true
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
                     };
 
                     // We have to hook the OnMessageReceived event in order to
@@ -64,13 +61,10 @@ namespace lab_chat_angular
                         {
                             var accessToken = context.Request.Query["access_token"];
 
-                            // If the request is for our hub...
-                            var path = context.HttpContext.Request.Path;
                             if (!string.IsNullOrEmpty(accessToken) &&
-                                (path.StartsWithSegments("/chat")))
+                                (context.HttpContext.WebSockets.IsWebSocketRequest || context.Request.Headers["Accept"] == "text/event-stream"))
                             {
-                                // Read the token out of the query string
-                                context.Token = accessToken;
+                                context.Token = context.Request.Query["access_token"];
                             }
                             return Task.CompletedTask;
                         }
@@ -86,8 +80,7 @@ namespace lab_chat_angular
             });
 
             services.AddSignalR();
-
-            services.AddSingleton<IUserIdProvider, NameUserIdProvider>();
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -103,15 +96,19 @@ namespace lab_chat_angular
                 app.UseHsts();
             }
 
+            app.UseWebSockets();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
-         
+            app.UseAuthentication();
+
             app.UseSignalR(route =>
             {
                 route.MapHub<ChatHub>("/chat");
             });
-            
+
+           
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

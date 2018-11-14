@@ -13,7 +13,7 @@ import { LOCAL_STORAGE, WebStorageService } from 'angular-webstorage-service';
 @Injectable()
 export class Login implements OnInit {
   private hubConnection: HubConnection;
-  txtDominio = '';
+  txtDominio = 'TISAL';
   txtUsuario = '';
   txtClave = '';
 

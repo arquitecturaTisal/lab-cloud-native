@@ -32,7 +32,7 @@ export class HomeComponent {
     this.nombre = this.storage.get('user');
     console.log('Token: ' + this.token);
     this.hubConnection = new HubConnectionBuilder()
-      .withUrl('/chat', { accessTokenFactory: () => this.token })
+      .withUrl('/chat', { accessTokenFactory: () => { return this.token } })
       .build();
 
 
