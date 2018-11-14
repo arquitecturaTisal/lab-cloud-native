@@ -97,7 +97,6 @@ namespace lab_chat_angular
             }
 
             app.UseWebSockets();
-            app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
             app.UseAuthentication();
