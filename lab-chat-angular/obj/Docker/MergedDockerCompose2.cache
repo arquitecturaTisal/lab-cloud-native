@@ -1,0 +1,30 @@
+services:
+  lab-chat-angular:
+    build:
+      context: C:\TFS\tfs.tisal.cl\Desarrollo Interno\Laboratorios\Cloud Native\lab-chat-angular
+      dockerfile: lab-chat-angular/Dockerfile
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTPS_PORT: '44353'
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      LOGIN_BASEURL: http://backend-login-api-lab-arquitectura-dev.appl.tisal.cl/
+      LOGIN_URLRELATIVA: api/v1/login/auth
+    image: labchatangular
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  lab-chat-angular.dll'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/bash -c "if PID=$$(pidof
+        -x dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 56319
+      target: 80
+    - published: 44353
+      target: 443
+    volumes:
+    - C:\Users\lpetruzzella\vsdbg\vs2017u5:/remote_debugger:ro
+    - C:\Users\lpetruzzella\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\lpetruzzella\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'
