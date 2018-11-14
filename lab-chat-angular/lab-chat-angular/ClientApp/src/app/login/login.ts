@@ -80,7 +80,6 @@ export class Login implements OnInit {
   }
 
   public login(): void {
-    this.conectar();
     this.hubConnection
       .invoke('Login', this.txtDominio, this.txtUsuario, this.txtClave)
       .catch(err => console.error(err));
