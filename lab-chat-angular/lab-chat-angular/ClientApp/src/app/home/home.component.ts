@@ -56,18 +56,17 @@ export class HomeComponent {
       .start()
       .then(() => {
         console.log('Hub connection started');
+        this.hubConnection.invoke('sendToAll', this.nick, this.nombre + " ha entrado a el chat.")
       })
       .catch(err => {
         console.log('Error while establishing connection...');
       });
-
-    this.hubConnection
-      .invoke('sendToAll', this.nick, this.message)
+    
   }
 
   public sendMessage(): void {
     this.hubConnection
-      .invoke('sendToAll', this.nick, this.nombre + " ha entrado a el chat.")
+      .invoke('sendToAll', this.nick, this.message)
       .catch(
        
       function () {
