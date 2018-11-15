@@ -60,11 +60,14 @@ export class HomeComponent {
       .catch(err => {
         console.log('Error while establishing connection...');
       });
+
+    this.hubConnection
+      .invoke('sendToAll', this.nick, this.message)
   }
 
   public sendMessage(): void {
     this.hubConnection
-      .invoke('sendToAll', this.nick, this.message)
+      .invoke('sendToAll', this.nick, this.nombre + " ha entrado a el chat.")
       .catch(
        
       function () {
