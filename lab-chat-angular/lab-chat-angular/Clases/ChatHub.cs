@@ -23,7 +23,7 @@ namespace Clases
         {
             string claveEncriptada = "";
             
-            string secret = "tisal.2018_security+PublicKey!#d";
+            string secret = Environment.GetEnvironmentVariable("ENCRIPT_SECRET");
 
             claveEncriptada = Helper.Instance.Encripta(clave, secret);
             var plainTextBytes = Encoding.UTF8.GetBytes(claveEncriptada);
