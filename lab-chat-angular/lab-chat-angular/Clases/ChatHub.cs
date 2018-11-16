@@ -12,6 +12,15 @@ namespace Clases
 {
     public class ChatHub : Hub
     {
+        public override System.Threading.Tasks.Task OnDisconnectedAsync(Exception  ex)
+        {
+        
+            String fecha = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+            Clients.All.SendAsync("sendToAll", "server", "(1) usuario se ha desconectado", fecha);
+
+            return base.OnDisconnectedAsync(ex);
+        }
+
         [Authorize(AuthenticationSchemes = "Bearer")]
         public void SendToAll(string name, string message)
         {
